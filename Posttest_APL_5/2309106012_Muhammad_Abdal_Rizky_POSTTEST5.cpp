@@ -49,7 +49,7 @@ int showCorporations(Corporation *corporations, int *currentAmountOfCorporations
     return showCorporations(corporations, currentAmountOfCorporations, index + 1);
 }
 
-bool loginCredentialCheck(string usernameInput, string passwordInput)
+bool loginCredentialCheck(string &usernameInput, string &passwordInput)
 {
     if (usernameInput == login.username && passwordInput == login.password)
     {
